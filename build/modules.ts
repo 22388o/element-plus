@@ -40,6 +40,7 @@ export const buildModules = async () => {
       preserveModules: true,
       preserveModulesRoot: epRoot,
       plugins: [filesize({ reporter })],
+      entryFileNames: '[name].mjs',
     },
     {
       format: 'cjs',
